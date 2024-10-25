@@ -1,5 +1,5 @@
 # 3PL
-<p align="center"><img width="423" alt="image" src="https://github.com/user-attachments/assets/f49e1bb9-77b6-4bee-9e75-d55b97bf4107"></p>
+<p align="center"><img width="423" alt="image" src="https://github.com/user-attachments/assets/166dc043-a8b9-4264-aefd-d45a6c2913fa"></p>
 
 ## 📦 WMS (Warehouse Management System)
 - 3PL 팀의 WMS 프로젝트는 창고 재고 관리 및 입출고 자동화를 통해 운영 비용 절감과 정확성 향상을 목표로 하는 백오피스 시스템입니다.
