@@ -1,18 +1,28 @@
 # 3PL
 <p align="center"><img width="423" alt="image" src="https://github.com/user-attachments/assets/166dc043-a8b9-4264-aefd-d45a6c2913fa"></p>
 
-## 📦 WMS (Warehouse Management System)
-- 3PL 팀의 WMS 프로젝트는 창고 재고 관리 및 입출고 자동화를 통해 운영 비용 절감과 정확성 향상을 목표로 하는 백오피스 시스템입니다.
-<br><br>
-## 🗓️ 개발 기간
+Warehouse Management System aims to enhance inventory management, streamline stock control, and improve admin management features.
+
+<img width="413" alt="singlehousehold" src="https://github.com/user-attachments/assets/b296ef86-4392-48f6-a77d-4052f2aabf68" />
+
+With the increasing number of single-person households, there is a growing demand for space-efficient furniture that is both practical and personalized. To align with this trend, we have developed a project that provides warehouse rental services for storing a variety of furniture products designed to meet the needs of single-person households.
+
+Our WMS project is a back-office system aimed at reducing operational costs and improving accuracy through warehouse inventory management and automated inbound and outbound processes.
+
+## Team
+|                                                                                   **김예진**                                                                                 |                    **AAA**                     |                **BBB**                 |
+|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------:|:--------------------------------------:|
+| Outbound Management, Dispatch Management, Notion Management | Member/Admin Management, Inbound Management, Github Management | Warehouse Management, Inventory Management |
+<br>
+
+## Work Breakdown Structure
+
+
 2024.09.26(목) ~ 2024.10.02(수)
 <br><br>
 
 ## 👨‍👩‍👦‍👦 팀원 구성
-|                                                                                   **김예진**                                                                                 |                    **이지은**                     |                **유태의**                 |
-|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------:|:--------------------------------------:|
-| <a href="https://github.com/yejinaCodes"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a> | <a href="https://github.com/Geun9"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a> | <a href="https://github.com/cookiemiro"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white&link=https://github.com/hongyeollee"/></a> |
-<br>
+
 
 ## 📌 프로젝트 목표
 - SpringBoot를 통해 신속하고 효율적인 웹 애플리케이션 개발 환경을 구축
