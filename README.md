@@ -16,23 +16,21 @@ Our WMS project is a back-office system aimed at reducing operational costs and 
 <br>
 
 ## Work Breakdown Structure
+<img width="301" alt="wbs2" src="https://github.com/user-attachments/assets/ebab3d30-11b4-49b1-a06f-f4890ad7a4dd" />
 
+Our project was carried out over a one-week period.
 
-2024.09.26(목) ~ 2024.10.02(수)
-<br><br>
+## 📌 1. Project goals
+- Build a fast and efficient web application development environment using Spring Boot.
+- Simplify database interactions using MyBatis.
+- Dynamically generate HTML on the server side using Thymeleaf.
+- Integrate Spring Boot and Thymeleaf via APIs for seamless client-server data communication.
+- Improve code quality and develop a stable web application through TDD (Test-Driven Development).
 
-## 👨‍👩‍👦‍👦 팀원 구성
-
-
-## 📌 프로젝트 목표
-- SpringBoot를 통해 신속하고 효율적인 웹 애플리케이션 개발 환경을 구축
-- MyBatis를 활용하여 데이터베이스와의 상호작용을 간소화
-- Thymeleaf를 이용하여 서버 측에서 HTML을 동적으로 생성
-- SpringBoot와 Thymeleaf를 API로 연동하여 클라이언트와 서버 간의 데이터 통신
-- TDD를 통해 코드 품질을 향상시키고, 안정적인 웹 애플리케이션을 개발
+  
 <br>
 
-## 📑 프로젝트 문서화
+## 📑 2. Documentations
 [ERD Cloud](https://www.erdcloud.com/d/7XnkXuQA3TLzzmJ4X)
 <br><br>
 
