@@ -33,9 +33,9 @@ Our project was carried out over a one-week period.
 
 ## 2. SYSTEM FLOW DETAILS
 
-<img width="655" alt="systemflow1" src="https://github.com/user-attachments/assets/a48aa2e6-7cae-4632-8931-999e2d56477f" />
+<img width="455" alt="systemflow1" src="https://github.com/user-attachments/assets/a48aa2e6-7cae-4632-8931-999e2d56477f" />
 
-<img width="936" alt="systemflow2" src="https://github.com/user-attachments/assets/ec795336-a633-4272-8ad3-2e0c43338be5" />
+<img width="736" alt="systemflow2" src="https://github.com/user-attachments/assets/ec795336-a633-4272-8ad3-2e0c43338be5" />
 
 
 The **Inbound** and **Outbound** processes are as follows. When a customer submits an inbound request, it is added to the request list. Once the request is approved, the goods are delivered to the warehouse. After inspection, the goods are stored in the designated locations within the warehouse. Once all procedures are complete, the system marks the inbound process as complete. When a customer submits an outbound request, it is added to the request list. Since one vehicle handles multiple outbound requests, the dispatch is approved first. After picking, inspection and loading the item, the outbound status is updated to "shipped." After the goods are delivered, vehicle returns to the warehouse, and the allocated quantities of the vehicle are reset.
