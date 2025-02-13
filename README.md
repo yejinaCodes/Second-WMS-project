@@ -43,7 +43,41 @@ The **Inbound** and **Outbound** processes are as follows. When a customer submi
 For more detail please refer to my blog:
 [**BLOG LINK 🔗**](https://velog.io/@lightamericano/%EC%B0%BD%EA%B3%A0-%EA%B4%80%EB%A6%AC-%EC%8B%9C%EC%8A%A4%ED%85%9CWMS-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2%EC%B0%A8)
 
-## 3. PACKAGE STRUCTURE
+## 3. TECHNOLOGY STACK
+
+<div align=center> 
+  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
+    <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
+  <br>
+  
+  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
+  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
+  <br>
+
+  <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
+  <br>
+
+  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
+<img src="https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagrams.net&logoColor=white">
+<img src="https://img.shields.io/badge/ERDCloud-000000?style=for-the-badge&logo=icloud&logoColor=white">
+
+<img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
+<img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
+</div>
+
+|Tech|Version|
+|------|---|
+|JAVA|17|
+|Thymeleaf|3.1.0|
+|BootStrap|5.3.3|
+|MySQL|8.0.21|
+
+
+## 4. PACKAGE STRUCTURE
 <img width="196" alt="ps" src="https://github.com/user-attachments/assets/109a9a61-d4f4-41a6-b324-41333d7f2eb5" />
 
 **common:** Package for managing commonly used constants such as Errocode and User Status.
@@ -65,7 +99,7 @@ For more detail please refer to my blog:
 **mybatis:** Package for managing MyBatis-related configuration files and mapper XML files.
 
 
-## 4. FEATURE IMPLEMENTATION
+## 5. FEATURE IMPLEMENTATION
 <img width="550" alt="wms2imp" src="https://github.com/user-attachments/assets/04ae2994-e395-4d39-a2cd-f9372a83582c" />
 
 <img width="550" alt="wms2featimpl2" src="https://github.com/user-attachments/assets/6588222e-e4d8-4453-948c-4e8d1aba0610" />
@@ -106,7 +140,7 @@ Upon Outbound completion:
 dispatch allocation per vehicle (Our WMS uses 13-ton, 18-ton, and 24-ton cargo trucks)
 - If the vehicle load exceeds 80% or loading started three days prior, a "Start Delivery" trigger updates the delivery status to IN_DELIVERY for all relevant vehicle_id entries in the Delivery table
 
-## 5. TROUBLE SHOOTING
+## 6. TROUBLE SHOOTING
 **Issue:** Ensuring Persistence in completeOutbound Transaction.
 - When executing completeOutbound(), all operations including approval logging were part of the same transaction.
 - If any error occurred later in the process, a rollback would erase all changes, including outbound approval logs, which must always be retained.
@@ -117,73 +151,31 @@ dispatch allocation per vehicle (Our WMS uses 13-ton, 18-ton, and 24-ton cargo t
 @Transactional(propagation = Propagation.REQUIRES_NEW)
 ```
 
-## 6. DOCUMENTATIONS
+## 7. DOCUMENTATIONS
 [ERD Cloud](https://www.erdcloud.com/d/7XnkXuQA3TLzzmJ4X)
 <br><br>
 
 ## USECASE
-### 회원 관리
+### User Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/695fad69-ae39-463d-bbaf-aadf6d68220a">
 
-### 창고 관리
+### Warehouse Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/6d186594-5888-430a-be5d-d8320da1743f">
 
 
-### 입고 관리
+### Inbound Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/3f237037-5ac8-4f22-8995-c60289bd6940">
 
-### 출고 관리
+### Outbound Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/e8005f08-8498-4884-9464-169b17cc4d57">
 
 
-### 차량 관리
+### Dispatch Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/8cb019f4-9850-4baa-a334-bbe92ec671be">
 
 
-### 재고 관리
+### Stock Management
 <img width="350" alt="image" src="https://github.com/user-attachments/assets/6c0a7040-7597-4751-99f1-8299d8f3479e">
-
-
-## TECH STACK
-<div align=center> 
-  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white">
-    <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> 
-  <br>
-  
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
-  <br>
-
-  <img src="https://img.shields.io/badge/thymeleaf-005F0F?style=for-the-badge&logo=thymeleaf&logoColor=white">
-<img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
-  <br>
-
-<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
-  <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
-  <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white">
-  <br>
-
-  <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
-  <img src="https://img.shields.io/badge/discord-80247B?style=for-the-badge&logo=discord&logoColor=white">
-  <img src="https://img.shields.io/badge/slack-4A154B?style=for-the-badge&logo=slack&logoColor=white">
-  <img src="https://img.shields.io/badge/Google Drive-1DBF73?style=for-the-badge&logo=Google Drive&logoColor=white">
-<br>
-
-<img src="https://img.shields.io/badge/draw.io-F08705?style=for-the-badge&logo=diagrams.net&logoColor=white">
-<img src="https://img.shields.io/badge/ERDCloud-000000?style=for-the-badge&logo=icloud&logoColor=white">
-
-<img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
-<img src="https://img.shields.io/badge/postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white">
-</div>
-
-|기술|버전|
-|------|---|
-|JAVA|17|
-|SpringBoot|3.1.1|
-|Thymeleaf|3.1.0|
-|BootStrap|5.3.3|
-|MySQL|8.0.21|
 
 
 ## 💻 구현 기능
